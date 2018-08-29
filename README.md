@@ -117,7 +117,8 @@ plan.local(function(transport) {
 
 #### Remote flights
 
-Commands in remote flights are executed in **parallel** against remote hosts.
+By default commands in remote flights are executed **simultaneously** against remote hosts.
+You can run the flights in parallel with `--parallel` option.
 
 ```javascript
 plan.remote(function(transport) {

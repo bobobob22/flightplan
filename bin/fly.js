@@ -13,6 +13,7 @@ var knownOptions = {
   'username': String,
   'debug': Boolean,
   'color': Boolean,
+  'parallel': Boolean,
   'version': Boolean,
   'help': Boolean
 };
@@ -24,6 +25,7 @@ var shortHands = {
   'C': ['--no-color'],
   't': ['--targets'],
   'T': ['--tasks'],
+  'p': ['--parallel'],
   'v': ['--version'],
   'h': ['--help']
 };
@@ -39,6 +41,7 @@ if(options.help) {
     '    -u, --username <name>    user for connecting to remote hosts\n' +
     '    -d, --debug              enable debug mode\n' +
     '    -C, --no-color           disable color output\n' +
+    '    -p, --parallel           execute task simultaneously on all hosts\n' +
     '    -t, --targets            output available targets\n' +
     '    -T, --tasks              output available tasks\n' +
     '    -v, --version            output the version number\n' +
